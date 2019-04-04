@@ -3,4 +3,7 @@
     <string name="login">Логин</string>
     <string name="password">Пароль</string>
     <string name="sing">Войти</string>
+    <string name="text_hello">Добро пожаловать в тестовый проект \nвнедрения электронных документов \nдля использования в
+        повседневной жизни. \nТестовый аккаунт: 89990000000 \nПароль 12345678
+    </string>
 </resources>
