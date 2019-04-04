@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/home_item"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/home_item"
+            android:title=""/>
+
+    <item
+            android:id="@+id/nfc_item"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/nfc_item"
+            android:title=""/>
+
+    <item
+            android:id="@+id/settings_item"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/settings_item"
+            android:title=""/>
+
+</menu>
