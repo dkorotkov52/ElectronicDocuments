@@ -3,6 +3,7 @@ package ru.korotkov.electronicdocuments
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import kotlinx.android.synthetic.main.activity_authorization.*
@@ -21,15 +22,21 @@ class AuthActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        when(v!!.id){
+        when (v!!.id) {
             R.id.sing -> login()
         }
     }
 
     private fun login() {
-        if(login.text!!.equals("89000000000") && password.text!!.equals("12345678")) {
+        if (login.text!!.equals("89000000000") && password.text!!.equals("12345678")) {
             finish()
+        } else {
+            showSnackbar("")
         }
+    }
+
+    private fun showSnackbar(text: String){
+//        Snackbar.make(this, text, Snackbar.LENGTH_LONG).show()
     }
 
 }
