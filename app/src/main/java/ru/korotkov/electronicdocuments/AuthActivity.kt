@@ -35,7 +35,7 @@ class AuthActivity : AppCompatActivity(), View.OnClickListener {
         if(loginText == "89" && passwordText == "12345678"){
             finish()
         }else{
-            showSnackbar("Ошибка входа")
+            showSnackbar("Ошибка вхда")
         }
     }
 
