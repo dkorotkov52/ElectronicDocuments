@@ -5,7 +5,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_authorization.*
 
 class AuthActivity : AppCompatActivity(), View.OnClickListener {
@@ -28,15 +30,16 @@ class AuthActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun login() {
-        if (login.text!!.equals("89000000000") && password.text!!.equals("12345678")) {
+        val loginText = login.text.toString()
+        val passwordText = password.text.toString()
+        if(loginText == "89" && passwordText == "12345678"){
             finish()
-        } else {
-            showSnackbar("")
+        }else{
+            showSnackbar("Ошибка входа")
         }
     }
 
     private fun showSnackbar(text: String){
-//        Snackbar.make(this, text, Snackbar.LENGTH_LONG).show()
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
-
 }
